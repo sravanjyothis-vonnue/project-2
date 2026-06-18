@@ -1,1 +1,307 @@
 /* code specific to pages are place here */
+@import url(/css/base.css);
+
+/* Home page */
+
+body {
+  background: url(/Assets/bhautik-patel-5rotZfQu3PM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 120px;
+}
+
+.heroContainer {
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: inset 4px 4px white;
+  padding: 10px;
+  border-bottom: none;
+  width: 90vw;
+  backdrop-filter: blur(4px);
+  margin-bottom: 140px;
+  height: 100dvh;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  color: white;
+}
+
+.hero h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 6vw, 120px);
+  color: white;
+  margin-top: -140px;
+}
+
+.featureHeader {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 6vw, 120px);
+  color: black;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 90px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.redHeader {
+  color: var(--color-primary);
+}
+
+.heroFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-family: var(--font-random);
+  font-size: var(--font-size-text);
+  font-weight: 700;
+}
+
+.heroText {
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90px;
+}
+
+.scrollInfo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.scrollInfo img {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.features {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  place-items: center;
+  color: black;
+  gap: 25px;
+  padding: 20px;
+  margin-bottom: 150px;
+}
+
+.testimonials {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 160px;
+  width: 90dvhw;
+}
+
+@media screen and (max-width: 480px) {
+  .heroFooter {
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 45px;
+  }
+  body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroText {
+    width: 80vw;
+    height: 150px;
+  }
+  .hero {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .hero h2 {
+    margin-top: -35px;
+  }
+  .card img {
+    width: 50px;
+    height: 50px;
+    align-self: flex-start;
+  }
+  .imageContainer img {
+    border-radius: 10px 10px;
+    width: 400px;
+  }
+  .featureContent {
+    width: 95dvw;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroText {
+    width: 80vw;
+    height: 150px;
+  }
+
+  .heroFooter {
+    flex-direction: column;
+    gap: 90px;
+    margin-top: 45px;
+  }
+  .hero h2 {
+    padding-left: 10px;
+  }
+
+  .featureHeader {
+    margin-top: 140px;
+  }
+
+  .hero {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .heroContainer {
+    margin-top: 150px;
+    margin-bottom: 20px;
+  }
+  .headerContainer {
+    width: 88vw;
+  }
+  .features {
+    gap: 40px;
+  }
+}
+
+/* About page */
+
+.aboutMain h1 {
+  margin-top: 140px;
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 6vw, 120px);
+  color: white;
+}
+
+.aboutContent {
+  font-family: var(--font-heading);
+  font-size: clamp(8px, 2vw, 25px);
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+  backdrop-filter: blur(2px);
+  border-radius: 50px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+  margin-top: 150px;
+}
+
+.goal {
+  font-family: var(--font-heading);
+  font-size: clamp(10px, 0.8vw, 25px);
+  text-align: justify;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+  backdrop-filter: blur(2px);
+  border-radius: 50px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+  margin-top: 150px;
+  height: 30dvh;
+}
+
+.goal h1 {
+  font-size: clamp(20px, 3vw, 120px);
+  margin-top: 0;
+  margin-left: 28px;
+}
+
+.pullQuote {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2vw, 25px);
+  color: red;
+  font-weight: 500;
+  margin-bottom: 400px;
+  margin-top: 450px;
+  padding-left: 300px;
+  width: 70dvw;
+  display: flex;
+  justify-content: center;
+}
+
+.pullQuote::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/Assets/quote.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.pullQuote::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/Assets/double-quotes.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.timeline h1 {
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutContent h1 {
+    margin: 50px;
+  }
+
+  .pullQuote {
+    padding-left: 20px;
+    width: 90dvw;
+  }
+
+  .timeline {
+    gap: 20px;
+  }
+}

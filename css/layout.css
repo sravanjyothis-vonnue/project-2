@@ -1,1 +1,169 @@
 /* holds the layout for header footer and grid ect. */
+@import url(/css/base.css);
+
+/* Header */
+
+header {
+  height: 4rem;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid white;
+  border-radius: 20px;
+  color: var(--color-secondry);
+  position: sticky;
+  top: 0;
+  margin-top: 18px;
+}
+
+header img {
+  height: 40px;
+  width: 40px;
+}
+
+.logoWhite {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: var(--font-size-text);
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.headerContainer {
+  width: 88.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logoText {
+  color: white;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: var(--font-size-text);
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  header nav {
+    display: none;
+  }
+
+  .headerContainer {
+    width: 86vw;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .headerContainer {
+    width: 88vw;
+  }
+  .heroSign {
+    display: none;
+  }
+  .logoText {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  height: 80dvh;
+  background: black;
+  color: white;
+  font-family: var(--font-footer);
+  font-size: var(--font-size-text);
+  border-radius: 60px 60px 0px 0px;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footerHeading {
+  font-family: var(--font-heading);
+  font-size: clamp(30px, 5vw, 50px);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+.footerContent {
+  margin-top: 90px;
+  display: flex;
+  gap: 80px;
+  padding: 70px;
+  text-align: justify;
+}
+
+.social {
+  display: flex;
+  width: 290px;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.moto {
+  width: 800px;
+  text-align: justify;
+}
+.address {
+  width: 500px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+  .footerContent {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .moto {
+    width: 400px;
+    text-align: justify;
+  }
+  .address {
+    width: 250px;
+    text-align: justify;
+  }
+  footer {
+    height: 100dvh;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .footerContent {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .moto {
+    width: 400px;
+    text-align: justify;
+  }
+  .address {
+    width: 300px;
+    text-align: justify;
+  }
+  footer {
+    height: 100dvh;
+  }
+}

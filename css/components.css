@@ -1,1 +1,119 @@
 /* General components like button , card , form , badges ect. */
+@import url(/css/base.css);
+
+button {
+  background-color: transparent;
+  border: 2px dotted white;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-text);
+  font-weight: 400;
+  width: 90px;
+}
+
+.imageContainer img {
+  border-radius: 10px 10px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.featureHeading {
+  font-family: var(--font-heading);
+  font-size: clamp(16px, 4vw, 25px);
+  color: red;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.testimonialsHeading {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 6vw, 120px);
+  color: black;
+  padding: 20px;
+}
+
+.featureContent {
+  text-align: justify;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-text);
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: clamp(16px, 2vw, 25px);
+  align-items: center;
+  width: 70dvw;
+}
+
+.card img {
+  float: left;
+  border-radius: 50%;
+}
+
+.reviewContent::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/Assets/quote.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.reviewContent::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/Assets/double-quotes.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.name {
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 250px;
+}
+
+.datalist {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 350px;
+  flex-wrap: wrap;
+}
+
+.datalist dt {
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2vw, 25px);
+  color: red;
+  text-align: left;
+}
+
+.datalist dd {
+  font-family: var(--font-primary);
+  font-size: clamp(14px, 1vw, 20px);
+  color: black;
+  width: 20dvw;
+}

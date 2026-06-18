@@ -1,1 +1,38 @@
 /* holds the general typography borderbox and variables */
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&family=Black+Ops+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&family=Black+Ops+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Atomic+Age&family=Bebas+Neue&family=Black+Ops+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: red;
+  --color-secondry: white;
+  --color-subtle: rgb(247, 84, 84);
+  --color-shadow: rgb(255, 230, 230);
+  --font-heading: Aldrich;
+  --font-primary: SN Pro;
+  --font-footer:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-random: Atomic Age;
+  --font-size-text: clamp(8px, 4vw, 18px);
+  --font-size-footer: clamp(6px, 4vw, 13px);
+  --font-size-heading: clamp(40px, 20vw, 250px);
+  --height-card: 300px;
+  --width-card: 600px;
+}
+
+body {
+  flex: 1;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 0;
+}
