@@ -36,6 +36,7 @@ button {
   font-size: clamp(20px, 6vw, 120px);
   color: black;
   padding: 20px;
+  animation: fade-in 1s linear 1 forwards;
 }
 
 .featureContent {
@@ -136,6 +137,15 @@ button {
 .serviceHeading {
   font-family: var(--font-heading);
   font-size: clamp(16px, 4vw, 25px);
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+#teamTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(25px, 5vw, 90px);
   color: white;
   font-weight: 700;
   margin-bottom: 10px;
