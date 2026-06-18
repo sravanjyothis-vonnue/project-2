@@ -262,3 +262,9 @@ button {
     width: 100dvw;
   }
 }
+
+/* Contact page */
+
+#contactTitle {
+  color: white;
+}
